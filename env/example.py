@@ -22,7 +22,7 @@ car2y0 = np.random.randint(-3, 3) # 可修改
 car2 = Car(car2x0, car2y0, yaw=math.pi, step=sim_step)
 
 ############# 改动 ###########
-V=2.0
+V=1.0
 ############# 改动 ###########
 
 #开始运动
