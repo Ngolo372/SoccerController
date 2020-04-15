@@ -8,6 +8,7 @@ def getvel(xcurrent, ycurrent, xgoal, ygoal,v=1):
     d = ((xcurrent-xgoal)**2 + (ycurrent-ygoal)**2)**0.5
     vx = 0.0
     vy = 0.0
+    
     if d > 0.5: #一处修改，考虑车体大小，8m场地中相当于间距25cm
         qx = (xgoal - xcurrent) / d
         qy = (ygoal - ycurrent) / d
@@ -16,7 +17,6 @@ def getvel(xcurrent, ycurrent, xgoal, ygoal,v=1):
         return vx,vy
     else:
         return vx,vy
-
 
 
 #小车类
